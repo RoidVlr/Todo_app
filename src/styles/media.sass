@@ -1,0 +1,63 @@
+@mixin tab()
+  margin-left: 10vw
+  
+@media (max-width: 490px)
+  .search
+    width: 60vw
+
+@media (max-width: 400px)
+  .nav-main
+    left: -10vw !important
+  .nav-options
+    left: -15vw !important
+
+@media (max-width: 370px)
+  .modal-switch
+    margin-bottom: 37px
+
+@media (max-width: 350px)
+  .nav-main
+    left: -8vw !important
+  .nav-options
+    left: -10vw !important
+  .inputs
+    @include tab()
+  .todoInput
+    width: calc(80vw - 35px)
+    height: 34px
+    font-size: 14px
+  .appender
+    width: 35px
+    height: 34px
+    font-size: 17px
+  s
+    font-size: 13px
+  .empty-input-error
+    font-size: 12px
+  .remover
+    transform: scale(.8)
+    left: 10px
+    bottom: 5px
+    &:hover
+      transform: scale(.9)
+  .list
+    @include tab()
+    width: 80vw
+  .search
+    @include tab()
+    width: 80vw
+
+@media (max-width: 300px)
+  .header
+    height: 45px
+  .icon
+    transform: scale(1.2) !important
+  .title
+    top: 2px !important
+    font-size: 15px !important
+  .nav-main
+    font-size: 12px
+    left: -6vw !important
+  .nav-options
+    font-size: 12px
+    left: -2vw !important
